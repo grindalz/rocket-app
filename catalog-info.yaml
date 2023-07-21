@@ -1,8 +1,12 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: System
 metadata:
-  name: "rocket-app"
+  catalog_version: 0.1.0
+  semrushKind: Product
+  name: test-product
+  annotations:
+    semrush.io/gost-product-name: test-product
 spec:
-  type: service
-  owner: user:guest
-  lifecycle: experimental
+  lifecycle: production
+  owner: group:default/phantom-team@semrush.com
+  type: internal-product
